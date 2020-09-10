@@ -9,4 +9,5 @@ import com.france.operantic.angular.model.Tutorial;
 public interface TutorialRepository extends MongoRepository<Tutorial, String> {
   List<Tutorial> findByPublished(boolean published);
   List<Tutorial> findByTitleContaining(String title);
+  List<Tutorial> findByDescriptionContaining(String description);
 }
