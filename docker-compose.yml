@@ -1,0 +1,13 @@
+# docker-compose.yml
+version: "3.3"
+services:
+  spring-boot-mongodb-0.0.1:
+    build:
+      context: ./
+    ports:
+      - "8087:8080"
+    networks:
+      - internal
+ 
+networks:
+  internal:
